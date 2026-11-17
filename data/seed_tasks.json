@@ -1,1 +1,426 @@
-{"_note":"种子数据：从 ~/memory/2026-11-17.md 提炼的 2026-11-17 当天真实任务逐条录入。状态/blocker_type 按 PRD 口径标注；历史已完成项记 done（均有日志证据且已上线/交付/经用户确认），与 PRD 样本 43/27 对不齐时以本明细为准，差额在 DELIVERY-01.md 说明。无据时间一律不填（进甘特未排期区），started_at/due_at 仅填日志有明确时间记载者。","tasks":[{"assignee_bot":"main","evidence":["正式 BUILD_ID P2i9cOq4nJp-yZdBHpE9B","提交 838f13d"],"progress":100,"project":"SummAsync","status":"done","title":"SummAsync v1.9.8：删 Hero eyebrow + 页脚标题加大加粗上正式"},{"assignee_bot":"main","evidence":["正式 BUILD_ID 34EfwWL0i2Muuj0qXD2dM","widget 2.4.1，22 个 widget 重注册零丢失"],"progress":100,"project":"SummAsync","status":"done","title":"SummAsync v1.9.9：客服窗品牌化（蓝栏+白 S 标+标题）上正式"},{"assignee_bot":"main","evidence":["正式 BUILD_ID cdsnBJinRZ9YAYq1goRbG","17 语审计缺失键 0"],"progress":100,"project":"SummAsync","status":"done","title":"SummAsync v1.9.10：i18n 全站补译 2810 条 + 校对修正 62 处上正式"},{"assignee_bot":"main","evidence":["~/workspace/summasync-dashboard-audit-20261117/findings.md","28 张截图，巡检账号已删净"],"progress":100,"project":"SummAsync","status":"done","title":"SummAsync 仪表盘登录巡检：查出 18 条问题（P0×3/P1×7/P2×8）"},{"assignee_bot":"main","evidence":["正式 BUILD_ID 10ZrK7P4H8hpPbSwn4uFH","退款接口无记录账号 GET 200 空态"],"progress":100,"project":"SummAsync","status":"done","title":"SummAsync v1.9.11：仪表盘 P0 三条修复上正式"},{"assignee_bot":"main","evidence":["正式 BUILD_ID fc2GDFijhJdg3KgX6JqMq"],"progress":100,"project":"SummAsync","status":"done","title":"SummAsync v1.9.12：剩余 15 条 + 用户追加 2 项修复，18 条全销项"},{"assignee_bot":"main","evidence":["用户 04:24 AST 批准排期后执行","检查点 ~/workspace/summasync-plan-drop-20261117/checkpoint.md"],"progress":100,"project":"SummAsync","status":"done","title":"SummAsync v1.9.13：退役休眠计费链 + drop profiles plan 相关列"},{"assignee_bot":"main","evidence":["定稿资产 ~/workspace/synthiabot-redesign/logo/lockup/synthiabot-lockup-a.svg"],"progress":100,"project":"SummAsync","status":"done","title":"SummAsync v1.9.14：页脚家族条 Synthiabot 假字标换定稿 lockup 一体图"},{"assignee_bot":"main","evidence":["正式 BUILD_ID fNYLeeiki5H6fm5eTxpMU","SupportOverview 真数据 79 会话/47 AI 解决/32 转人工"],"progress":100,"project":"Synthiabot","status":"done","title":"Synthiabot 第十四步：改版整批推正式（五件全落地、十项验收全过）"},{"assignee_bot":"main","evidence":["正式 BUILD_ID S5SWTRu7Q6Q311pW7czXN","用户亲口确认控制台换了"],"progress":100,"project":"Synthiabot","status":"done","title":"Synthiabot 第十五步：logo 全站统一推正式 + 控制台换标用户亲验"},{"assignee_bot":"main","evidence":["~/workspace/synthiabot-redesign/qa-acceptance-20261117.md","P1 一条 ProgrammerNeeds 徽章链 404，用户定不动"],"progress":100,"project":"Synthiabot","status":"done","title":"Synthiabot 正式站全站验收：无 P0、可备份"},{"assignee_bot":"main","evidence":["网站仓 master ca3d1d5、后端仓 master b88c62e","ls-remote 复核双标签"],"progress":100,"project":"Synthiabot","status":"done","title":"Synthiabot GitHub 备份升版 v4.0.0（网站仓+后端仓双标签）"},{"assignee_bot":"main","evidence":["正式 BUILD_ID NNzyzd52xMsmmVsdLwbL5","只动 app/api/demo/chat/route.ts"],"progress":100,"project":"Synthiabot","status":"done","title":"Synthiabot 第十八步：演示复合问题四缺陷修复上正式"},{"assignee_bot":"main","evidence":["邮件专用白底板 lockup PNG","样例邮件已真发用户 Gmail 供暗黑模式实测"],"progress":100,"project":"Synthiabot","status":"done","title":"Synthiabot 第二十步：页脚假字标 + 邮件暗黑模式 logo 修复推正式"},{"assignee_bot":"main","blocker_reason":"版式只上预览、仍待用户看预览截图拍板后才推正式","evidence":["分支 design/demo-one-screen-20261117（c4e8513）完好保留"],"progress":80,"project":"Synthiabot","status":"awaiting_user","title":"Synthiabot 演示页版式改造：一屏装下 + 四色 + 输入框可拖宽（只上预览）"},{"assignee_bot":"main","description":"独立审核新发现 ND-1/2/3：无关问题乱端文档、查单第二步端运费政策、回答截断。已派工修复，未回报。","progress":50,"project":"Synthiabot","status":"in_progress","title":"Synthiabot 演示 ND 缺陷修复（第二十三步：相关性门槛+查单第二步）"},{"assignee_bot":"main","evidence":["Worker #15 ff9c7b5a","用户首次谷歌实登落库 2026-11-17T08:12:42Z"],"progress":100,"project":"GreetChina","started_at":"2026-11-17T08:12:42Z","status":"done","title":"GreetChina 谷歌登录单独上线正式，三站互认打通"},{"assignee_bot":"main","evidence":["部署 ce886406、sw v21","8 语词典各 373 键齐平"],"progress":100,"project":"GreetChina","status":"done","title":"GreetChina 账号页补齐 8 种语言并修复真浏览器首验 bug"},{"assignee_bot":"main","evidence":["部署 ba0aa5ee、sw v22","真浏览器复验首页导航含登入"],"progress":100,"project":"GreetChina","status":"done","title":"GreetChina 登录入口静态化（14 页）+ 页脚标题加大到 16 号"},{"assignee_bot":"main","blocker_reason":"DESK 离线（计划关机标记至 2026-11-18T00:00:00Z），权威副本暂存大本营 greetchina-*-20261117/ 两目录，DESK 上线后照清单同步","blocker_type":"resource","progress":30,"project":"GreetChina","status":"blocked","title":"GreetChina 三轮改动源码同步回 DESK 权威仓"},{"assignee_bot":"main","evidence":["cover_199_red.jpg / cover_premium_green.jpg 公网 200","H5 首页逐门核过无破图"],"progress":100,"project":"优课OPC","status":"done","title":"优课OPC：9 门快板课封面补齐（红衣 6 门 + 绿衣 3 门，完整 https 地址）"},{"assignee_bot":"main","evidence":["~/workspace/youke-ui-student-candidates-20261117.md"],"progress":100,"project":"优课OPC","status":"done","title":"优课OPC：学员端 UI 改版调研交付（Wot/TDesign 等逐个核许可证）"},{"assignee_bot":"main","evidence":["样稿空间 slug wot-feng-ge-shou-ye-yang-gao","用户评首页起码好看很多了，其余四页待一起评审"],"progress":95,"project":"优课OPC","status":"pending_acceptance","title":"优课OPC：Wot 风格样稿 5 页（首页/列表/详情/我的/空购物车）待评审"},{"assignee_bot":"main","evidence":["support@ 在 Zoho 原线程发出、Sent 核对 Delivered 无退信"],"progress":100,"project":"获客","status":"done","title":"获客：三封博主回信（Nathan/Platform Guide/Chase）经用户批准发出"},{"assignee_bot":"main","evidence":["Modern Retail cale@modernretail.co 550 退信、此线关闭","Gorgias 直接竞品暂缓未发"],"progress":100,"project":"获客","status":"done","title":"获客：博主邀约第五批发送（4 发 3 达 1 退信，A/B 档可发量归零）"},{"assignee_bot":"main","evidence":["b1-final-dual.mp4 50.60 秒 md5 e15d22bd","三平台回读验活公开可见"],"progress":100,"project":"获客","status":"done","title":"获客：短视频 b1 双声版（主讲用户克隆声）发布 TikTok/YouTube/IG 三平台"},{"assignee_bot":"main","evidence":["us-acq /opt/promo-dept/ 章程与岗位书","大本营副本 ~/workspace/synthiabot-promo-dept/"],"progress":100,"project":"获客","status":"done","title":"获客：Synthiabot 宣传部成立（策划/实施/审核 3 Bot，驻 us-acq）"},{"assignee_bot":"main","evidence":["~/workspace/synthiabot-conversion/giveaway/plan.md 等四件","用户点头 20 号按计划上线"],"progress":100,"project":"获客","status":"done","title":"获客：抽奖活动四件套交付（方案/落地页预览/9 组帖子/执行清单）"},{"assignee_bot":"main","description":"基线核查完成（release 分支相对 667869e 仅 14 文件、不含演示版式），本地复验进行中，未见正式部署完成回报。","progress":40,"project":"获客","status":"in_progress","title":"获客：抽奖正式上线执行（/giveaway 推正式 + 体检确认文案）"},{"assignee_bot":"main","description":"2026-11-17 05:47:55 UTC 流水线在 record 步失败（Send 按钮 disabled 超时），已派修复工单只改 record_demo.mjs、只重跑 c1，未交活。","progress":50,"project":"获客","status":"in_progress","title":"获客：短视频 c1 流水线修复（record 步与新界面不匹配）"},{"assignee_bot":"main","description":"已派出浏览器任务执行中，未回报。","progress":30,"project":"获客","status":"in_progress","title":"获客：TikTok 官方号注册（support@，用户名首选 synthiabot）"},{"assignee_bot":"main","blocker_reason":"两个全新确认码约 1 分钟内填入均被判无效/过期、重发无新邮件，账号未创建；已排 2026-11-17 09:30 AST 全新会话重试一次","blocker_type":"external","progress":60,"project":"获客","status":"blocked","title":"获客：Instagram 官方号 @synthiabot 注册"},{"assignee_bot":"main","blocker_reason":"注册被机器人墙静默拦截，用户拍板 X 先放放、先办 Instagram 和 TikTok","progress":10,"project":"获客","status":"shelved","title":"获客：X 官方号注册"},{"assignee_bot":"main","blocker_reason":"谷歌人机验证在电脑与手机同出口 IP 多轮循环不过，用户定先搁置至少一天，下次换 MIYA 城市节点再试","progress":20,"project":"获客","status":"shelved","title":"获客：Reddit 应用 synthiabot-monitor 创建与监控线"},{"assignee_bot":"main","blocker_reason":"实查免费仅 4 积分、生成需 78 积分，是否付费开 Basic $20/月待用户拍板（助理建议先等 HeyGen 结果）","evidence":["未生成视频、未付费"],"progress":20,"project":"获客","status":"awaiting_user","title":"获客：Hedra 数字人测试（免费额度核查）"},{"assignee_bot":"main","blocker_reason":"support@ 不是 Zoho 组织管理员、进管理控制台被拒，别名未建；待找到管理员账号再补，用户已定先用 support@ 直注册","blocker_type":"external","progress":10,"project":"获客","status":"blocked","title":"获客：Zoho 加 social@ 别名"},{"assignee_bot":"main","due_at":"2026-11-17T04:00:20Z","evidence":["北京大脑 auth.log 实锤自家钥匙登录","白名单 2 条已建、仅 bj-brain 生效"],"progress":100,"project":"其他","started_at":"2026-11-17T03:42:27Z","status":"done","title":"其他：腾讯云密码破解误报定案 + 加 104.28/104.29 两段白名单"},{"assignee_bot":"main","due_at":"2026-11-17T06:45:00Z","evidence":["杀净后负载降至 0.73、NO_BUILDS_RUNNING","新规矩已写入 AGENTS.md：构建一律 us-acq"],"progress":100,"project":"其他","started_at":"2026-11-17T06:12:00Z","status":"done","title":"其他：chinatravel 并发构建压垮两站事故处置（停构建恢复网站）"},{"assignee_bot":"main","evidence":["~/workspace/your_files/baoding-consultant-service-sheet/","~/workspace/your_files/baoding-first-contact-list/"],"progress":100,"project":"其他","status":"done","title":"其他：保定顾问兼职两份对外材料 PDF 交付"},{"assignee_bot":"main","evidence":["bj.sh 实查、负载 0.16"],"progress":100,"project":"其他","status":"done","title":"其他：北京大脑执行任务盘点实查（11 核心服务+6 容器+22 n8n 流）"},{"assignee_bot":"main","evidence":["定案为 2026-11-16 克隆声 bot 遗留窗口","bj-brain 已杀 GUI 进程复验无重连"],"progress":100,"project":"其他","status":"done","title":"其他：FIGO 远程提示溯源 + 关闭北京 RustDesk 遗留窗口"},{"assignee_bot":"main","evidence":["~/workspace/voice-clone-cloud-test/ 四段音频","用户盲听定案，Fish 中文定 1.15 倍速"],"progress":100,"project":"其他","status":"done","title":"其他：Fish + MiniMax 云端克隆声盲测完成并定分工（中文 Fish/英文 MiniMax）"},{"assignee_bot":"main","evidence":["~/workspace/voice-clone-cloud-test/lesson01/","中文 2分23秒、英文 2分32秒"],"progress":100,"project":"其他","status":"done","title":"其他：Muse 初级课第 1 节中英配音按分工免费跑完"},{"assignee_bot":"main","evidence":["毛衣自拍+TikTok 2:13 视频过真人验证","免费版有水印、模型 Avatar 6 Pro"],"progress":100,"project":"其他","status":"done","title":"其他：HeyGen 免费试点（数字分身中英样片）用户验收效果极好"},{"assignee_bot":"main","evidence":["~/workspace/kaggle-avatar-sample/sample_v1.mp4（31.7 秒）","待用户判口型/长句/发音/循环动作四项"],"progress":95,"project":"其他","status":"pending_acceptance","title":"其他：Kaggle MuseTalk 数字人样片 v1 待用户验收"},{"assignee_bot":"main","blocker_reason":"待用户录 S0/S6 出镜 + FIGO 录屏后才能出样片验收，试点未正式成立","evidence":["~/workspace/muse-course-pilot/PILOT.md 与 lesson01/ v2 讲稿"],"progress":80,"project":"其他","status":"awaiting_user","title":"其他：录课部试点三 Bot 一阶段交付（教研/制作包/运营 SOP）"},{"assignee_bot":"main","blocker_reason":"须用户本人在 2026-11-18 09:12（北京时间）前到 beian.miit.gov.cn 完成核验，且尚未确认是哪个小程序的备案","evidence":["短信截图在原对话"],"progress":50,"project":"其他","status":"awaiting_user","title":"其他：小程序备案短信核验（09:12 短信，24 小时内须完成）"},{"assignee_bot":"main","blocker_reason":"CI 迁移未同步预览库、正式不受影响，是否另开单待用户决定","progress":10,"project":"其他","status":"awaiting_user","title":"其他：SummAsync 预览库 support_* 表缺失是否另开单补齐"},{"assignee_bot":"main","blocker_reason":"2026-11-12 提交后仍在 Shopify 人工审核中、商店搜不到；自家安装链接一键安装已可用","blocker_type":"external","progress":40,"project":"其他","status":"blocked","title":"其他：Shopify 应用商店审核"},{"assignee_bot":"main","description":"emoji tint/默认色 fallback 仍有紫残留，需重编 widget，未动。","progress":0,"project":"其他","status":"todo","title":"其他：Synthiabot widget 本体紫残留重编"},{"assignee_bot":"main","evidence":["已在原对话交付完整分析（前提纠正：小船非台湾人）"],"progress":100,"project":"其他","status":"done","title":"其他：小船 LittleBoatTan 商业模式模仿分析交付"}]}
+{
+  "_note": "脱敏演示数据（结构与统计分布同真实使用，内容为虚构示例）",
+  "tasks": [
+    {
+      "assignee_bot": "main",
+      "evidence": "演示证据：变更已在演示环境验证通过（示例数据）",
+      "progress": 100,
+      "project": "SummAsync",
+      "status": "done",
+      "title": "文档摘要功能页文案更新上线"
+    },
+    {
+      "assignee_bot": "main",
+      "evidence": "演示证据：变更已在演示环境验证通过（示例数据）",
+      "progress": 100,
+      "project": "SummAsync",
+      "status": "done",
+      "title": "批量处理价格页排版优化"
+    },
+    {
+      "assignee_bot": "main",
+      "evidence": "演示证据：变更已在演示环境验证通过（示例数据）",
+      "progress": 100,
+      "project": "SummAsync",
+      "status": "done",
+      "title": "客服窗口品牌样式统一"
+    },
+    {
+      "assignee_bot": "main",
+      "evidence": "演示证据：变更已在演示环境验证通过（示例数据）",
+      "progress": 100,
+      "project": "SummAsync",
+      "status": "done",
+      "title": "多语言文案补齐与校对"
+    },
+    {
+      "assignee_bot": "main",
+      "evidence": "演示证据：变更已在演示环境验证通过（示例数据）",
+      "progress": 100,
+      "project": "SummAsync",
+      "status": "done",
+      "title": "用户仪表盘问题清单修复"
+    },
+    {
+      "assignee_bot": "main",
+      "evidence": "演示证据：变更已在演示环境验证通过（示例数据）",
+      "progress": 100,
+      "project": "SummAsync",
+      "status": "done",
+      "title": "帮助中心常见问题更新"
+    },
+    {
+      "assignee_bot": "main",
+      "evidence": "演示证据：变更已在演示环境验证通过（示例数据）",
+      "progress": 100,
+      "project": "SummAsync",
+      "status": "done",
+      "title": "官网页脚信息整理"
+    },
+    {
+      "assignee_bot": "main",
+      "evidence": "演示证据：变更已在演示环境验证通过（示例数据）",
+      "progress": 100,
+      "project": "SummAsync",
+      "status": "done",
+      "title": "新用户引导流程走查"
+    },
+    {
+      "assignee_bot": "main",
+      "evidence": "演示证据：变更已在演示环境验证通过（示例数据）",
+      "progress": 100,
+      "project": "Synthiabot",
+      "status": "done",
+      "title": "官网首页改版上线"
+    },
+    {
+      "assignee_bot": "main",
+      "evidence": "演示证据：变更已在演示环境验证通过（示例数据）",
+      "progress": 100,
+      "project": "Synthiabot",
+      "status": "done",
+      "title": "在线演示问答质量修复"
+    },
+    {
+      "assignee_bot": "main",
+      "evidence": "演示证据：变更已在演示环境验证通过（示例数据）",
+      "progress": 100,
+      "project": "Synthiabot",
+      "status": "done",
+      "title": "品牌标志全站统一"
+    },
+    {
+      "assignee_bot": "main",
+      "evidence": "演示证据：变更已在演示环境验证通过（示例数据）",
+      "progress": 100,
+      "project": "Synthiabot",
+      "status": "done",
+      "title": "定价页折扣校验修复"
+    },
+    {
+      "assignee_bot": "main",
+      "evidence": "演示证据：变更已在演示环境验证通过（示例数据）",
+      "progress": 100,
+      "project": "Synthiabot",
+      "status": "done",
+      "title": "客服数据概览接入后台"
+    },
+    {
+      "assignee_bot": "main",
+      "evidence": "演示证据：变更已在演示环境验证通过（示例数据）",
+      "progress": 100,
+      "project": "Synthiabot",
+      "status": "done",
+      "title": "多语言导航文案对齐"
+    },
+    {
+      "assignee_bot": "main",
+      "blocker_reason": "版式只上预览、仍待用户看预览截图拍板后才推正式",
+      "evidence": "演示证据：阶段性记录已归档（示例数据）",
+      "progress": 80,
+      "project": "Synthiabot",
+      "status": "awaiting_user",
+      "title": "新用户欢迎邮件模板更新"
+    },
+    {
+      "assignee_bot": "main",
+      "description": "独立审核新发现 ND-1/2/3：无关问题乱端文档、查单第二步端运费政策、回答截断。已派工修复，未回报。",
+      "progress": 50,
+      "project": "Synthiabot",
+      "status": "in_progress",
+      "title": "帮助文档结构整理"
+    },
+    {
+      "assignee_bot": "main",
+      "evidence": "演示证据：变更已在演示环境验证通过（示例数据）",
+      "progress": 100,
+      "project": "GreetChina",
+      "started_at": "2026-11-17T08:12:42Z",
+      "status": "done",
+      "title": "旅游站账号登录功能上线"
+    },
+    {
+      "assignee_bot": "main",
+      "evidence": "演示证据：变更已在演示环境验证通过（示例数据）",
+      "progress": 100,
+      "project": "GreetChina",
+      "status": "done",
+      "title": "线路详情页多语言补齐"
+    },
+    {
+      "assignee_bot": "main",
+      "evidence": "演示证据：变更已在演示环境验证通过（示例数据）",
+      "progress": 100,
+      "project": "GreetChina",
+      "status": "done",
+      "title": "询价表单提交流程测试"
+    },
+    {
+      "assignee_bot": "main",
+      "blocker_reason": "DESK 离线（计划关机标记至 2026-11-18T00:00:00Z），权威副本暂存大本营 greetchina-*-20261117/ 两目录，DESK 上线后照清单同步",
+      "blocker_type": "resource",
+      "progress": 30,
+      "project": "GreetChina",
+      "status": "blocked",
+      "title": "首页线路卡片信息更新"
+    },
+    {
+      "assignee_bot": "main",
+      "evidence": "演示证据：变更已在演示环境验证通过（示例数据）",
+      "progress": 100,
+      "project": "优课OPC",
+      "status": "done",
+      "title": "课程封面图补齐"
+    },
+    {
+      "assignee_bot": "main",
+      "evidence": "演示证据：变更已在演示环境验证通过（示例数据）",
+      "progress": 100,
+      "project": "优课OPC",
+      "status": "done",
+      "title": "学员端界面风格样稿评审"
+    },
+    {
+      "assignee_bot": "main",
+      "evidence": "演示证据：已提交验收材料（示例数据）",
+      "progress": 95,
+      "project": "优课OPC",
+      "status": "pending_acceptance",
+      "title": "课程列表页排版调整"
+    },
+    {
+      "assignee_bot": "main",
+      "evidence": "演示证据：变更已在演示环境验证通过（示例数据）",
+      "progress": 100,
+      "project": "获客",
+      "status": "done",
+      "title": "博主合作邀约第一批发送"
+    },
+    {
+      "assignee_bot": "main",
+      "evidence": "演示证据：变更已在演示环境验证通过（示例数据）",
+      "progress": 100,
+      "project": "获客",
+      "status": "done",
+      "title": "博主合作邀约第二批跟进"
+    },
+    {
+      "assignee_bot": "main",
+      "evidence": "演示证据：变更已在演示环境验证通过（示例数据）",
+      "progress": 100,
+      "project": "获客",
+      "status": "done",
+      "title": "短视频内容发布三平台"
+    },
+    {
+      "assignee_bot": "main",
+      "evidence": "演示证据：变更已在演示环境验证通过（示例数据）",
+      "progress": 100,
+      "project": "获客",
+      "status": "done",
+      "title": "产品目录站资料提交"
+    },
+    {
+      "assignee_bot": "main",
+      "evidence": "演示证据：变更已在演示环境验证通过（示例数据）",
+      "progress": 100,
+      "project": "获客",
+      "status": "done",
+      "title": "社区推广帖文案准备"
+    },
+    {
+      "assignee_bot": "main",
+      "description": "基线核查完成（release 分支相对 667869e 仅 14 文件、不含演示版式），本地复验进行中，未见正式部署完成回报。",
+      "progress": 40,
+      "project": "获客",
+      "status": "in_progress",
+      "title": "合作伙伴招募资料包整理"
+    },
+    {
+      "assignee_bot": "main",
+      "description": "2026-11-17 05:47:55 UTC 流水线在 record 步失败（Send 按钮 disabled 超时），已派修复工单只改 record_demo.mjs、只重跑 c1，未交活。",
+      "progress": 50,
+      "project": "获客",
+      "status": "in_progress",
+      "title": "抽奖活动方案与落地页"
+    },
+    {
+      "assignee_bot": "main",
+      "description": "已派出浏览器任务执行中，未回报。",
+      "progress": 30,
+      "project": "获客",
+      "status": "in_progress",
+      "title": "抽奖活动正式上线"
+    },
+    {
+      "assignee_bot": "main",
+      "blocker_reason": "两个全新确认码约 1 分钟内填入均被判无效/过期、重发无新邮件，账号未创建；已排 2026-11-17 09:30 AST 全新会话重试一次",
+      "blocker_type": "external",
+      "progress": 60,
+      "project": "获客",
+      "status": "blocked",
+      "title": "官方社交账号注册"
+    },
+    {
+      "assignee_bot": "main",
+      "blocker_reason": "注册被机器人墙静默拦截，用户拍板 X 先放放、先办 Instagram 和 TikTok",
+      "progress": 10,
+      "project": "获客",
+      "status": "shelved",
+      "title": "推广渠道清单扩充"
+    },
+    {
+      "assignee_bot": "main",
+      "blocker_reason": "谷歌人机验证在电脑与手机同出口 IP 多轮循环不过，用户定先搁置至少一天，下次换 MIYA 城市节点再试",
+      "progress": 20,
+      "project": "获客",
+      "status": "shelved",
+      "title": "用户反馈收集与整理"
+    },
+    {
+      "assignee_bot": "main",
+      "blocker_reason": "实查免费仅 4 积分、生成需 78 积分，是否付费开 Basic $20/月待用户拍板（助理建议先等 HeyGen 结果）",
+      "evidence": "演示证据：阶段性记录已归档（示例数据）",
+      "progress": 20,
+      "project": "获客",
+      "status": "awaiting_user",
+      "title": "推广效果周报汇总"
+    },
+    {
+      "assignee_bot": "main",
+      "blocker_reason": "support@ 不是 Zoho 组织管理员、进管理控制台被拒，别名未建；待找到管理员账号再补，用户已定先用 support@ 直注册",
+      "blocker_type": "external",
+      "progress": 10,
+      "project": "获客",
+      "status": "blocked",
+      "title": "内容选题库更新"
+    },
+    {
+      "assignee_bot": "main",
+      "due_at": "2026-11-17T04:00:20Z",
+      "evidence": "演示证据：变更已在演示环境验证通过（示例数据）",
+      "progress": 100,
+      "project": "其他",
+      "started_at": "2026-11-17T03:42:27Z",
+      "status": "done",
+      "title": "服务器安全告警复核"
+    },
+    {
+      "assignee_bot": "main",
+      "due_at": "2026-11-17T06:45:00Z",
+      "evidence": "演示证据：变更已在演示环境验证通过（示例数据）",
+      "progress": 100,
+      "project": "其他",
+      "started_at": "2026-11-17T06:12:00Z",
+      "status": "done",
+      "title": "代码仓库版本备份"
+    },
+    {
+      "assignee_bot": "main",
+      "evidence": "演示证据：变更已在演示环境验证通过（示例数据）",
+      "progress": 100,
+      "project": "其他",
+      "status": "done",
+      "title": "远程办公设备连通性检查"
+    },
+    {
+      "assignee_bot": "main",
+      "evidence": "演示证据：变更已在演示环境验证通过（示例数据）",
+      "progress": 100,
+      "project": "其他",
+      "status": "done",
+      "title": "语音合成样本对比测试"
+    },
+    {
+      "assignee_bot": "main",
+      "evidence": "演示证据：变更已在演示环境验证通过（示例数据）",
+      "progress": 100,
+      "project": "其他",
+      "status": "done",
+      "title": "数字人样片制作测试"
+    },
+    {
+      "assignee_bot": "main",
+      "evidence": "演示证据：变更已在演示环境验证通过（示例数据）",
+      "progress": 100,
+      "project": "其他",
+      "status": "done",
+      "title": "课程讲稿初稿整理"
+    },
+    {
+      "assignee_bot": "main",
+      "evidence": "演示证据：变更已在演示环境验证通过（示例数据）",
+      "progress": 100,
+      "project": "其他",
+      "status": "done",
+      "title": "备案材料进度跟进"
+    },
+    {
+      "assignee_bot": "main",
+      "evidence": "演示证据：变更已在演示环境验证通过（示例数据）",
+      "progress": 100,
+      "project": "其他",
+      "status": "done",
+      "title": "应用商店上架材料准备"
+    },
+    {
+      "assignee_bot": "main",
+      "evidence": "演示证据：已提交验收材料（示例数据）",
+      "progress": 95,
+      "project": "其他",
+      "status": "pending_acceptance",
+      "title": "内部工具需求调研"
+    },
+    {
+      "assignee_bot": "main",
+      "blocker_reason": "待用户录 S0/S6 出镜 + FIGO 录屏后才能出样片验收，试点未正式成立",
+      "evidence": "演示证据：阶段性记录已归档（示例数据）",
+      "progress": 80,
+      "project": "其他",
+      "status": "awaiting_user",
+      "title": "工作文件归档整理"
+    },
+    {
+      "assignee_bot": "main",
+      "blocker_reason": "须用户本人在 2026-11-18 09:12（北京时间）前到 beian.miit.gov.cn 完成核验，且尚未确认是哪个小程序的备案",
+      "evidence": "演示证据：阶段性记录已归档（示例数据）",
+      "progress": 50,
+      "project": "其他",
+      "status": "awaiting_user",
+      "title": "日程与待办盘点"
+    },
+    {
+      "assignee_bot": "main",
+      "blocker_reason": "CI 迁移未同步预览库、正式不受影响，是否另开单待用户决定",
+      "progress": 10,
+      "project": "其他",
+      "status": "awaiting_user",
+      "title": "第三方服务额度核查"
+    },
+    {
+      "assignee_bot": "main",
+      "blocker_reason": "2026-11-12 提交后仍在 Shopify 人工审核中、商店搜不到；自家安装链接一键安装已可用",
+      "blocker_type": "external",
+      "progress": 40,
+      "project": "其他",
+      "status": "blocked",
+      "title": "演示环境数据准备"
+    },
+    {
+      "assignee_bot": "main",
+      "description": "emoji tint/默认色 fallback 仍有紫残留，需重编 widget，未动。",
+      "progress": 0,
+      "project": "其他",
+      "status": "todo",
+      "title": "团队周会纪要整理"
+    },
+    {
+      "assignee_bot": "main",
+      "evidence": "演示证据：变更已在演示环境验证通过（示例数据）",
+      "progress": 100,
+      "project": "其他",
+      "status": "done",
+      "title": "新功能想法池评审"
+    }
+  ]
+}

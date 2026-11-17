@@ -1,5 +1,7 @@
 # 任务完成看板 · TaskBoard
 
+中文 | [English](README.en.md)
+
 给「一人老板 + 多个 AI Bot 干活」用的任务量化看板：Bot 每干完一项就写进接口，老板打开手机 3 秒看清今天干了多少、卡在哪、哪些等自己拍板。
 
 - 总览大百分比圆环 + 总数拆分（分子分母永远可见）
@@ -18,7 +20,7 @@ python3 server.py            # 默认 http://127.0.0.1:8780
 python3 server.py --port 9000
 ```
 
-打开浏览器访问即可。首次启动会从 `data/seed_tasks.json` 生成运行时数据 `data/tasks.json`（种子为 2026-11-17 当天真实任务样本）；删掉 `data/tasks.json` 即可重置回种子。
+打开浏览器访问即可。首次启动会从 `data/seed_tasks.json` 生成运行时数据 `data/tasks.json`（种子为脱敏演示数据：结构与统计分布与真实使用一致，内容为虚构示例）；删掉 `data/tasks.json` 即可重置回种子。
 
 ## 接口
 
@@ -61,7 +63,7 @@ python3 server.py --port 9000
 
 ## Editions（Open Core）
 
-本仓库是 **Community 版**，按用户 2026-11-17 拍板的 Open Core 模式运营（划分全文见上级目录 `OPENCORE.md`）：
+本仓库是 **Community 版**，按 Open Core 模式运营（划分全文为运营方内部文档）：
 
 - **Community（MIT，开源免费）**：本仓库全部功能，即简单任务量化全套——总览圆环、助理侧完成率、分项目柱状图、基础甘特、任务明细与 8 状态流转、筛选、开放接口读写与汇总、Bot 令牌直写、用户验收/打回、待我处理收件箱、数据自检。单机/自托管、单工作区。
 - **Enterprise（付费，保留，不在本仓库）**：高级功能保留收费，将来放独立私仓以插件/扩展包接入，**本仓库不包含任何企业版功能代码**；仅按变更单 CHANGE-02 预留注册码远程验证接口层（见下节）。候选清单（终版待另行拍板，本节不构成价格/功能承诺）：
@@ -95,7 +97,7 @@ python3 server.py --port 9000
 ```
 server.py            后端（API + 静态文件服务 + 企业版注册码预留层）
 public/              前端（index.html / style.css / app.js）
-data/seed_tasks.json 种子数据（2026-11-17 真实任务样本）
+data/seed_tasks.json 种子数据（脱敏演示数据）
 data/tasks.json      运行时数据（首次启动生成，已 gitignore）
 data/license.json    权益令牌缓存（运行时生成，已 gitignore）
 data/instance_id     本机实例标识（运行时生成，已 gitignore）

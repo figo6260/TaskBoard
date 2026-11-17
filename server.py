@@ -128,7 +128,7 @@ def load_store():
                 "history": s.get("history") or [
                     {"at": s.get("created_at", "2026-11-17T00:00:00Z"),
                      "by": s.get("reporter", "main"), "from": None,
-                     "to": s["status"], "note": "种子数据录入（2026-11-17 当天真实任务，来源 ~/memory/2026-11-17.md）"}
+                     "to": s["status"], "note": "种子数据录入（脱敏演示数据）"}
                 ],
             }
             tasks.append(t)
