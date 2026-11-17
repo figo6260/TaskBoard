@@ -1,0 +1,56 @@
+/* TaskBoard — self-written CSS (MIT). Responsive: desktop multi-column, 375px single column. */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; background: #f4f6f9; color: #111; }
+.topbar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; justify-content: space-between;
+  background: #0E7BD0; color: #fff; padding: 10px 14px; }
+.brand { font-size: 18px; font-weight: 700; }
+.brand .en { font-weight: 400; font-size: 13px; opacity: .85; }
+.top-controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; font-size: 14px; }
+.top-controls input { border: 0; border-radius: 6px; padding: 5px 7px; }
+.inbox-badge { background: #CBF857; color: #111; font-weight: 700; border-radius: 999px; padding: 4px 10px; }
+.seg { display: inline-flex; border-radius: 8px; overflow: hidden; }
+.seg button { background: rgba(255,255,255,.25); color: #fff; border-radius: 0; padding: 6px 13px; min-height: 32px; }
+.seg button.active { background: #fff; color: #0E7BD0; font-weight: 700; }
+main { max-width: 1180px; margin: 0 auto; padding: 12px; display: flex; flex-direction: column; gap: 12px; }
+.row { display: flex; gap: 12px; }
+.card { background: #fff; border-radius: 12px; padding: 14px; box-shadow: 0 1px 3px rgba(0,0,0,.08); }
+.cards-row .card { flex: 1; min-width: 180px; }
+.ring-card { display: flex; align-items: center; gap: 10px; }
+.ring-caption { font-size: 14px; color: #444; }
+.big { font-size: 30px; font-weight: 700; }
+.sub { font-size: 13px; color: #555; line-height: 1.5; }
+h3 { margin: 0 0 8px; font-size: 15px; }
+h4 { margin: 12px 0 6px; font-size: 14px; }
+button { background: #111; color: #fff; border: 0; border-radius: 8px; padding: 6px 12px; cursor: pointer; font-size: 14px; min-height: 36px; }
+button.secondary { background: #0E7BD0; }
+button.danger { background: #c0392b; }
+.filters { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.filters select, .filters input { padding: 6px; border: 1px solid #ccd; border-radius: 6px; font-size: 14px; }
+.bar-row { display: grid; grid-template-columns: 110px 1fr 130px; gap: 8px; align-items: center; padding: 4px 0; font-size: 14px; }
+.bar-track { background: #e8edf2; border-radius: 6px; height: 18px; overflow: hidden; }
+.bar-fill { background: #0E7BD0; height: 100%; }
+.gantt-scroll { overflow-x: auto; }
+.plain { margin: 0; padding-left: 18px; font-size: 13px; color: #444; }
+.task { border-bottom: 1px solid #eee; padding: 8px 4px; cursor: pointer; font-size: 14px; }
+.task:hover { background: #f6faff; }
+.task .meta { color: #666; font-size: 12px; }
+.pill { display: inline-block; border-radius: 999px; padding: 1px 8px; font-size: 12px; color: #fff; background: #888; }
+.pill.done { background: #2e9e4f; } .pill.in_progress { background: #0E7BD0; }
+.pill.pending_acceptance { background: #e67e22; } .pill.awaiting_user { background: #c0392b; }
+.pill.blocked { background: #8e44ad; } .pill.shelved { background: #777; }
+.pill.todo { background: #999; } .pill.cancelled { background: #bbb; }
+.prog { display: inline-block; width: 90px; height: 8px; background: #e8edf2; border-radius: 4px; vertical-align: middle; }
+.prog > i { display: block; height: 100%; background: #0E7BD0; border-radius: 4px; }
+.hidden { display: none; }
+.excluded { font-size: 13px; margin-top: 8px; border-top: 1px dashed #ccc; padding-top: 6px; }
+.selfcheck { font-size: 13px; }
+.selfcheck.bad { background: #fdecea; color: #c0392b; font-weight: 700; }
+#detail .kv { font-size: 13px; color: #444; line-height: 1.7; }
+#detail ul { font-size: 13px; }
+@media (max-width: 700px) {
+  .row { flex-direction: column; }
+  .cards-row .card { min-width: 0; }
+  .bar-row { grid-template-columns: 84px 1fr 104px; font-size: 13px; }
+  main { padding: 8px; }
+  .big { font-size: 26px; }
+}

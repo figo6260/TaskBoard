@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>任务完成看板 · TaskBoard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">📊 任务完成看板 <span class="en">TaskBoard</span></div>
+  <div class="top-controls">
+    <span class="seg" id="f-period" role="group" aria-label="统计周期">
+      <button type="button" data-period="day" class="active">日</button><button type="button" data-period="week">周</button><button type="button" data-period="month">月</button><button type="button" data-period="year">年</button>
+    </span>
+    <label>锚点日期 <input type="date" id="f-date"></label>
+    <button id="btn-today" type="button">回到今天</button>
+    <label>令牌 <input type="password" id="f-token" size="14" placeholder="用户令牌"></label>
+    <span class="inbox-badge" id="inbox-badge" title="待我处理">待我处理 0</span>
+  </div>
+</header>
+
+<main>
+  <!-- 第一行：大盘 -->
+  <section class="row cards-row">
+    <div class="card ring-card">
+      <div id="ring"></div>
+      <div class="ring-caption">总完成率<br><span id="ring-frac">—</span><br><span class="sub" id="range-label">—</span></div>
+    </div>
+    <div class="card">
+      <h3>助理侧完成率</h3>
+      <div class="big" id="assistant-rate">—</div>
+      <div class="sub" id="assistant-detail">—</div>
+      <button type="button" id="btn-excluded">看剔除明细</button>
+      <div id="excluded-list" class="excluded hidden"></div>
+    </div>
+    <div class="card">
+      <h3>有效总数 / 已完成</h3>
+      <div class="big"><span id="n-done">—</span> / <span id="n-total">—</span></div>
+      <div class="sub" id="status-split">—</div>
+    </div>
+    <div class="card alert-card">
+      <h3>待我处理（当前）</h3>
+      <div class="big" id="pending-my">—</div>
+      <div class="sub">待验收 + 待用户拍板（时点数，不随周期/锚点变化）</div>
+      <div class="sub">被卡住：<span id="n-blocked">—</span></div>
+    </div>
+  </section>
+
+  <!-- 筛选 -->
+  <section class="card filters">
+    <label>项目 <select id="f-project"><option value="">全部项目</option></select></label>
+    <label>状态 <select id="f-status">
+      <option value="">全部状态</option>
+      <option value="todo">待办</option><option value="in_progress">进行中</option>
+      <option value="pending_acceptance">待验收</option><option value="done">已完成</option>
+      <option value="awaiting_user">待用户拍板</option><option value="blocked">被卡住</option>
+      <option value="shelved">已搁置</option><option value="cancelled">已取消</option>
+    </select></label>
+    <label>搜索 <input type="search" id="f-q" placeholder="标题关键词"></label>
+    <span class="sub" id="filter-note"></span>
+  </section>
+
+  <!-- 第二行：分项目柱状图（手写 SVG） -->
+  <section class="card">
+    <h3>分项目完成情况</h3>
+    <div id="bars"></div>
+  </section>
+
+  <!-- 第三行：甘特图（手写 SVG） -->
+  <section class="card">
+    <h3>甘特图（按项目分组）</h3>
+    <div id="gantt" class="gantt-scroll"></div>
+    <p class="sub" id="gantt-note"></p>
+    <h4>未排期（无起止时间，不伪造时间）</h4>
+    <ul id="unscheduled" class="plain"></ul>
+  </section>
+
+  <!-- 第四行：明细 + 详情 -->
+  <section class="row detail-row">
+    <div class="card grow">
+      <h3>任务明细</h3>
+      <div id="task-list"></div>
+    </div>
+    <div class="card grow" id="detail-card">
+      <h3>任务详情</h3>
+      <div id="detail"><p class="sub">点左侧任意一条任务看详情、证据与历史；待验收任务可在此验收 / 打回。</p></div>
+    </div>
+  </section>
+
+  <!-- 企业版注册码（CHANGE-02 预留接口层）：免费版不依赖注册码 -->
+  <section class="card">
+    <h3>企业版注册码</h3>
+    <div class="sub" id="lic-status">企业版权益：读取中…</div>
+    <label>注册码 <input type="text" id="lic-key" size="24" placeholder="TB-ENT-…"></label>
+    <button type="button" id="btn-lic-activate">激活（远程验证）</button>
+    <button type="button" id="btn-lic-verify">重新验证</button>
+    <button type="button" id="btn-lic-deactivate">停用</button>
+    <p class="sub">注册码须向远程授权服务器验证，换取带签名、带到期的短期权益令牌；本地只验签，不内置任何可离线通过的签发逻辑。远程不可达时免费版照常运行，仅企业版提示无法验证。</p>
+  </section>
+
+  <footer class="card selfcheck" id="selfcheck">数据自检：加载中…</footer>
+</main>
+<script src="app.js"></script>
+</body>
+</html>

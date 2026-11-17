@@ -1,0 +1,9 @@
+data/tasks.json
+data/tasks.json.tmp
+data/license.json
+data/license.json.tmp
+data/instance_id
+tools/.mock_license_state/
+__pycache__/
+*.pyc
+.DS_Store
